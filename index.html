@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="form-title">Doctor Appointment Form</h1>
+    <hr>
+
+    <div class="container">
+
+        <img class="form-image"
+        src="https://d26e3f10zvrezp.cloudfront.net/Gallery/09f40de3-6319-4d7b-9fa6-900860103e40-1024x1024.webp"
+        alt="Doctor">
+
+        <form>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <br><br>
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required>
+            <br><br>
+
+            <label>Gender:</label>
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br><br>
+
+            <label for="city">Address:</label>
+            <input type="text" id="city" placeholder="City">
+
+            <input type="text" id="state" placeholder="State">
+            <br><br>
+
+            <label for="query">Your Query:</label>
+            <textarea id="query" cols="30" rows="5"></textarea>
+            <br><br>
+
+            <label for="appointment">Appointment Type:</label>
+
+            <select id="appointment">
+                <option>Cervix Checkup</option>
+                <option>Heart Checkup</option>
+                <option>Eye Checkup</option>
+                <option>Hearing Test</option>
+            </select>
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </div>
+
+</body>
+</html>
